@@ -1,0 +1,45 @@
+.multichoice-item {
+  position: relative;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.multichoice-item__text {
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start;
+  max-height: 45px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px 5px 5px;
+  max-width: 170px;
+  overflow: hidden;
+  font-size: 14px;
+  line-height: 120%;
+}
+
+.multichoice-item__text_style_vertical {
+  max-width: 100%;
+}
+
+.multichoice-item__close {
+  position: absolute;
+  right: -10px;
+  top: -9px;
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  border: 1px solid black;
+  font-size: 16px;
+  line-height: 80%;
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.multichoice-item__close:hover {
+  background-color: #a00;
+}

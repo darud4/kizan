@@ -1,0 +1,34 @@
+.textview {
+  display: flex;
+  flex-direction: column;
+  min-width: 600px;
+  max-width: 800px;
+}
+
+.textview__label {
+  width: 100%;
+  font-style: italic;
+  font-size: 14px;
+  color: #222;
+  margin-top: 5px;
+}
+
+.textview__label:first-of-type {
+  margin-top: 0;
+}
+
+.textview__input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.textview__button {
+  width: 50px;
+  letter-spacing: 2px;
+  align-self: end;
+}

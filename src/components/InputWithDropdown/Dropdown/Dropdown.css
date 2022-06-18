@@ -1,0 +1,40 @@
+.iwd__dropdown {
+  position: absolute;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  top: 95px;  
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid black;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  z-index: 100;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 20px #333 ;
+  transition: opacity .3s ease, visibility .3s linear;
+  max-height: 400px;
+}
+
+.iwd__dropdown_active {
+  visibility: visible;
+  opacity: 1;
+  overflow-y: auto;
+}
+
+.iwd__dropdown__item {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  height: 40px;
+  box-sizing: border-box;
+  user-select: none;
+  cursor: pointer;
+  transition: all .1s ease;
+}
+
+.iwd__dropdown__item_active {
+  background-color: black;
+  color: white;
+}

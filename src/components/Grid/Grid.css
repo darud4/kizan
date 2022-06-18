@@ -1,0 +1,55 @@
+.grid {
+  width: 100%;
+  border: 1px solid #aaa;
+  margin-top: 30px;
+}
+
+.grid__header-cell {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.grid__header-cell_sort_asc::before {
+  margin-right: 10px;
+  content: "↑";
+}
+.grid__header-cell_sort_asc::after {
+  content: "↑";
+  margin-left: 10px;
+}
+
+.grid__header-cell_sort_desc::before {
+  content: "↓";
+  margin-right: 10px;
+}
+.grid__header-cell_sort_desc::after {
+  margin-left: 10px;
+  content: "↓";
+}
+
+.grid__header {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+}
+
+.grid__header-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.grid__row {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.grid__row:nth-child(2n-1) {
+  background-color: #ddd;
+}
+
+.grid__row:hover {
+  background-color: #333;
+  color: white;
+}

@@ -1,0 +1,25 @@
+.input {
+  padding: 0 10px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.input:focus {
+  background-color: rgb(214, 202, 202);
+}
+
+.label {
+  display: grid;
+  grid-template-columns: 2fr 5fr 1fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: all .3s;
+  border-radius: 5px;
+  padding: 0 10px;
+}

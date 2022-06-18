@@ -1,0 +1,146 @@
+.input {
+  padding: 0 10px;
+  height: 35px;
+  font-size: 16px;
+  position: relative;
+  width: 100%;
+  border: 0;
+}
+
+.input__outer-wrapper {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.input__inner-wrapper {
+  width: 100%;
+  display: flex;
+  border: 1px solid #777;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.input__inner-wrapper_active {
+  box-shadow: 0 0 2px 5px #ddd;
+}
+
+.input_clickable:hover {
+  background-color: #5e5a5a;
+  color: white;
+  cursor: pointer;
+}
+
+.label:first-of-type {
+  margin-top: 30px;
+}
+
+.label {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: all 0.3s;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.input__button {
+  box-sizing: border-box;
+  padding: 0 8px;
+  border: 0;
+  border-left: 1px solid black;
+  border-radius: 5px;
+  font-size: 22px;
+  letter-spacing: 3px;
+  transition: all 0.3s;
+  user-select: none;
+  width: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.input__button:hover {
+  background-color: #222;
+  color: white;
+}
+
+.multichoice {
+  display: flex;
+  flex-direction: column;
+}
+
+.multichoice__input-wrap {
+  display: flex;
+  border: 1px solid #aaa;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.2s;
+  box-sizing: border-box;
+  height: 35px;
+}
+
+.multichoice__input-wrap_valid {
+  border: 2px solid rgb(16, 102, 16);
+}
+
+.multichoice__input-wrap_invalid {
+  border: 2px solid rgb(175, 12, 12);
+}
+
+.multichoice__input-wrap_active {
+  box-shadow: 0 0 5px 5px #ccc;
+}
+
+.multichoice__input {
+  width: 100%;
+  padding: 0 20px;
+  font-size: 20px;
+  transition: all 0.2s;
+  min-width: 600px;
+  box-sizing: border-box;
+  border: 0;
+}
+
+.multichoice__input:focus + .multichoice__input-wrap {
+  box-shadow: 0 0 2px 5px #ddd;
+}
+
+.multichoice__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+  flex-wrap: wrap;
+}
+
+.multichoice__list_style_vertical {
+  flex-direction: column;
+}
+
+.multichoice__button {
+  box-sizing: border-box;
+  width: 40px;
+  border: 0;
+  border-left: 1px solid #aaa;
+  font-size: 22px;
+  letter-spacing: 3px;
+  transition: all 0.3s;
+  user-select: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.multichoice__button:hover {
+  background-color: #222;
+  color: white;
+}

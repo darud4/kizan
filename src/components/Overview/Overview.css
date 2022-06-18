@@ -1,0 +1,54 @@
+.overview {
+    padding-top: 40px;
+    position: relative;
+  }
+
+.overview__form {
+  display: flex;
+  border-radius: 25px;
+  border: 1px solid #aaa;
+  max-width: 800px;
+  padding: 0 0 0 20px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.overview__label {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.overview__input {
+  border: 0;
+  height: 50px;
+  width: 100%;
+}
+
+.overview__search {
+  border: 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.overview__input::placeholder {
+  font-style: italic;
+  text-align: center;
+  color: #444;
+}
+
+.overview__input-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.overview__submit {
+  border: 0;
+  padding: 0 20px;
+  transition: all 0.2s ease;
+  border-left: #aaa solid 1px;
+}
+
+.overview__submit:hover {
+  background-color: #333;
+  color: white;
+}
